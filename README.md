@@ -6,6 +6,14 @@ A reproducible audit of 11 graph 3-coloring experiments comparing responses attr
 
 Excluding contaminated pilot Test 1, ChatGPT answers are mathematically correct on 8/10 graphs and Claude answers on 10/10. ChatGPT incorrectly returns UNSAT on Tests 10 and 11. Reported format compliance is 10/10 versus 8/10, but most full response texts are unavailable for independent formatting inspection.
 
+## Why this matters
+
+**An AI answer can follow every formatting instruction and still be mathematically wrong.** In Test 11, a pasted response attributed to ChatGPT follows the required JSON format but declares that no valid coloring exists. An independently checked coloring proves that conclusion incorrect. Test 10 provides a second false UNSAT case in the supplied records, although its ChatGPT response is reconstructed.
+
+Graph coloring makes this distinction precisely testable: a proposed coloring can be checked against every edge, and complete search can determine whether a solution exists. The contribution is a reproducible evaluation process that separates formatting from correctness, excludes a contaminated pilot, and makes evidence limitations explicit. The 8/10 versus 10/10 comparison describes these records; it does not establish a general model ranking.
+
+The connection to AI safety is **evaluation reliability**: independent checks can expose errors that format checks alone miss. This small case study demonstrates verification practice; it does not directly measure alignment or real-world safety performance.
+
 ## Reproduce
 
 Requires Python 3.10 or later; no third-party packages, network, API keys or model calls.
