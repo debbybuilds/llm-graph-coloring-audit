@@ -1,0 +1,23 @@
+test_id,model,excluded_from_primary,n,edge_count,truth,predicted_status,classification_correct,mathematically_correct,format_compliant,format_including_reported,format_evidence
+1,ChatGPT,True,5,6,SAT,SAT,True,True,,True,reported reconstruction
+1,Claude,True,5,6,SAT,SAT,True,True,,True,reported reconstruction
+2,ChatGPT,False,6,9,SAT,SAT,True,True,,True,reported reconstruction
+2,Claude,False,6,9,SAT,SAT,True,True,,False,reported reconstruction
+3,ChatGPT,False,7,12,UNSAT,UNSAT,True,True,,True,reported reconstruction
+3,Claude,False,7,12,UNSAT,UNSAT,True,True,,False,reported reconstruction
+4,ChatGPT,False,8,14,SAT,SAT,True,True,,True,reported reconstruction
+4,Claude,False,8,14,SAT,SAT,True,True,,True,reported reconstruction
+5,ChatGPT,False,9,18,SAT,SAT,True,True,,True,reported reconstruction
+5,Claude,False,9,18,SAT,SAT,True,True,,True,reported reconstruction
+6,ChatGPT,False,10,24,UNSAT,UNSAT,True,True,,True,reported reconstruction
+6,Claude,False,10,24,UNSAT,UNSAT,True,True,,True,reported reconstruction
+7,ChatGPT,False,11,25,UNSAT,UNSAT,True,True,,True,reported reconstruction
+7,Claude,False,11,25,UNSAT,UNSAT,True,True,,True,reported reconstruction
+8,ChatGPT,False,12,30,SAT,SAT,True,True,,True,reported reconstruction
+8,Claude,False,12,30,SAT,SAT,True,True,,True,reported reconstruction
+9,ChatGPT,False,11,29,UNSAT,UNSAT,True,True,,True,reported reconstruction
+9,Claude,False,11,29,UNSAT,UNSAT,True,True,,True,reported reconstruction
+10,ChatGPT,False,15,54,SAT,UNSAT,False,False,,True,reported reconstruction
+10,Claude,False,15,54,SAT,SAT,True,True,True,True,observed pasted response
+11,ChatGPT,False,16,58,SAT,UNSAT,False,False,True,True,observed pasted response
+11,Claude,False,16,58,SAT,SAT,True,True,True,True,observed pasted response

@@ -1,0 +1,17 @@
+{
+  "status": "Unverified historical assistant claims, not ground truth",
+  "claims": [
+    {
+      "claim": "ChatGPT mathematical accuracy 8/10; Claude 10/10; JSON-only 10/10 and 8/10 excluding pilot.",
+      "source_turn_id": "source-05"
+    },
+    {
+      "claim": "Test 10 has 54 edges, is SAT and Claude satisfies all constraints.",
+      "source_turn_id": "source-02"
+    },
+    {
+      "claim": "Test 11 has 58 edges, is SAT and Claude satisfies all constraints.",
+      "source_turn_id": "source-05"
+    }
+  ]
+}
